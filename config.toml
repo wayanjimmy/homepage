@@ -5,6 +5,7 @@ paginate = 5
 canonifyurls = true
 publishdir = "public"
 theme = "casper"
+DisqusShortname = "wayanjimmy-gitlab"
 
 [params]
   description = "catat biar gak lupa"
