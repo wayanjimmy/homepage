@@ -3,7 +3,6 @@ date = "2016-01-21T23:18:19+08:00"
 draft = false
 title = "Halo dunia"
 menu = ""
-truncated = true
 image = "https://images.unsplash.com/photo-1462795532207-33cabf8c8175?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=785365af839ad4a2e775fe932a76ce7a"
 
 +++
