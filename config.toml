@@ -1,8 +1,9 @@
-baseurl = "http://replace-this-with-your-hugo-site.com/"
+baseurl = "http://wayanjimmy.gitlab.io/"
 languageCode = "en-us"
 title = "Jimmy Ngoding"
 paginate = 5
 canonifyurls = true
+publishdir = "public"
 
 [params]
   description = "catat biar gak lupa"
