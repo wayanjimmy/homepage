@@ -15,6 +15,7 @@ theme = "casper"
   githubName = "wayanjimmy"
   twitterName = "wayanjimmy"
   hideHUGOSupport = true
+  googleAnalyticsUserID = "UA-81011140-1"
 
 [[menu.main]]
   name = "Home"
