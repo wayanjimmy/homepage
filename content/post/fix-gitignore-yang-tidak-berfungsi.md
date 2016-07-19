@@ -1,6 +1,6 @@
 +++
 date = "2016-01-22T00:03:58+08:00"
-draft = true
+draft = false
 title = "Fix .gitignore yang kadang tidak berfungsi"
 
 +++

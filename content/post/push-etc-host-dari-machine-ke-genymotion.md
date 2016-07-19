@@ -1,6 +1,6 @@
 +++
 date = "2016-01-23T00:08:34+08:00"
-draft = true
+draft = false
 title = "Push /etc/host dari host PC ke Genymotion emulator device"
 
 +++
