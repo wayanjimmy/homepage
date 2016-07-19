@@ -4,6 +4,7 @@ title = "Jimmy Ngoding"
 paginate = 5
 canonifyurls = true
 publishdir = "public"
+theme = "casper"
 
 [params]
   description = "catat biar gak lupa"
