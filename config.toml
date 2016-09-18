@@ -10,7 +10,7 @@ DisqusShortname = "wayanjimmy-gitlab"
 [params]
   description = "catat biar gak lupa"
   cover = "https://images.unsplash.com/photo-1465326117523-6450112b60b2?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=f340b4d4a364ac53dcb92955373fc5e0"
-  thumbnail = "https://avatars2.githubusercontent.com/u/1282808"
+  logo = "https://avatars2.githubusercontent.com/u/1282808"
   author = "Wayan Jimmy"
   authorlocation = "Bali"
   bio= "Ngoding demi makanan"
