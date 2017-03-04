@@ -2,7 +2,7 @@ image: publysher/hugo
 
 pages:
   script:
-  - hugo
+  - hugo -b https://wayanjimmy.gitlab.io
   artifacts:
     paths:
     - public

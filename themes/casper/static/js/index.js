@@ -56,5 +56,8 @@
 })(jQuery);
 
 $(document).ready(function() {
-    console.log("Hello my dear...");
+    var host = "wayanjimmy.gitlab.io";
+    if ((host == window.location.host) && (window.location.protocol != 'https:')) {
+      window.location = window.location.toString().replace(/^http:/, "https:");
+    }
 });
