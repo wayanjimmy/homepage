@@ -4,22 +4,20 @@ title = "Jimmy Ngoding"
 paginate = 5
 canonifyurls = true
 publishdir = "public"
-theme = "casper"
-DisqusShortname = "wayanjimmy-gitlab"
+theme = "cocoa"
+disqusshortname = "wayanjimmy-gitlab"
+googleanalytics = "UA-81011140-1"
 
 [params]
   description = "catat biar gak lupa"
   cover = "https://images.unsplash.com/photo-1465326117523-6450112b60b2?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=f340b4d4a364ac53dcb92955373fc5e0"
   author = "Wayan Jimmy"
   authorlocation = "Bali"
-  bio= "Ngoding demi makanan"
-  githubName = "wayanjimmy"
-  twitterName = "wayanjimmy"
+  selfintro= "Will code for food"
+  github= "//github.com/wayanjimmy"
+  twitter= "//twitter.com/wayanjimmy"
   hideHUGOSupport = false
-  googleAnalyticsUserID = "UA-81011140-1"
-
-[[menu.main]]
-  name = "Home"
-  weight = -120
-  identifier = "home"
-  url = "/"
+  gatracker= "UA-81011140-1"
+  avatar="images/avatar.png"
+  email="jimmyeatcrab@gmail.com"
+  highlightjs=true
