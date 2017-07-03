@@ -14,9 +14,9 @@ dokku apps:create kejuapp
 ~~~
 
 ### Install plugin MySQL
-	
+
 Lengkapnya ada [disini](https://github.com/dokku/dokku-mysql), atau pakai cara dibawah
-	
+
 ~~~bash
 sudo dokku plugin:install https://github.com/dokku/dokku-mysql.git mysql
 
@@ -27,9 +27,9 @@ dokku mysql:link kejudb kejuapp
 Perintah link akan mengeluarkan output seperti ini
 
 ~~~bash
------> Setting config vars
+--> Setting config vars
        DATABASE_URL: mysql://mysql:094982631159a769@dokku-mysql-kejudb:3306/kejudb
------> Restarting app kejuapp
+--> Restarting app kejuapp
 ~~~
 
 Nah, itu dsn string bisa diolah menjadi
@@ -46,7 +46,10 @@ DB_PASSWORD=094982631159a769
 Normalnya kita akan edit file `.env`, berhubung menggunakan dokku, kita bisa gunakan perintah `config:set	` untuk set environment variables-nya
 
 ~~~bash
-dokku config:set kejuapp APP_ENV=production APP_KEY=acakacaksaya DB_CONNECTION=mysql DB_HOST=dokku-mysql-kejudb DB_DATABASE=kejudb DB_USERNAME=mysql DB_PASSWORD=094982631159a769
+dokku config:set kejuapp APP_ENV=production APP_KEY=acakacaksaya \
+	DB_CONNECTION=mysql DB_HOST=dokku-mysql-kejudb \
+	DB_DATABASE=kejudb DB_USERNAME=mysql \
+	DB_PASSWORD=094982631159a769
 ~~~
 
 ### Setup Buildpack
@@ -54,7 +57,8 @@ dokku config:set kejuapp APP_ENV=production APP_KEY=acakacaksaya DB_CONNECTION=m
 Kita akan menggunakan buildpack [php](https://github.com/heroku/heroku-buildpack-php), agar Dokku mengenali app kita adalah aplikasi php/laravel.
 
 ~~~bash
-dokku config:set kejuapp BUILDPACK_URL=https://github.com/heroku/heroku-buildpack-php
+dokku config:set kejuapp \
+	BUILDPACK_URL=https://github.com/heroku/heroku-buildpack-php
 ~~~
 
 ### Final
@@ -71,4 +75,3 @@ git push dokku master
 dokku domains:add kejuapp kejuapp.dokku.xyz
 dokku config:set kejuapp APP_URL=http://kejuapp.dokku.xyz
 ~~~
-
