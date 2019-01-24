@@ -1,8 +1,8 @@
-image: publysher/hugo
+image: gatsbyjs/gatsby:latest
 
 pages:
   script:
-  - hugo -b https://wayanjimmy.gitlab.io
+  - gatsby build
   artifacts:
     paths:
     - public
