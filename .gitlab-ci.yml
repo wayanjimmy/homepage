@@ -1,11 +1,15 @@
-image: gatsbyjs/gatsby:latest
+image: node:latest
+
+cache:
+  paths:
+    - node_modules/
 
 pages:
   script:
-  - yarn
-  - gatsby build
+    - npm install
+    - ./node_modules/.bin/gatsby build
   artifacts:
     paths:
-    - public
+      - public
   only:
-  - master
+    - master
