@@ -2,6 +2,7 @@ image: gatsbyjs/gatsby:latest
 
 pages:
   script:
+  - yarn
   - gatsby build
   artifacts:
     paths:
