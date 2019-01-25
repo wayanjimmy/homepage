@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'react-emotion'
 import { Link } from 'gatsby'
-import { Mail, Send } from 'react-feather'
+import { Mail, Send, Twitter } from 'react-feather'
 
 import Layout from '../components/layout'
 import gopay from '../images/gopay.jpg'
@@ -22,6 +22,10 @@ const ContactIcon = styled.div`
   ${tw`flex items-center mr-2`}
 `
 
+const BlackLink = styled.a`
+  ${tw`text-black no-underline hover:underline`}
+`
+
 const IndexPage = () => (
   <Layout>
     <Section>
@@ -40,21 +44,21 @@ const IndexPage = () => (
       <h2>projects</h2>
       <ul>
         <li>
-          <a href="https://github.com/wayanjimmy/thejsway_id" target="_blank">
+          <BlackLink href="https://github.com/wayanjimmy/thejsway_id" target="_blank">
             thejsway_id
-          </a>{' '}
+          </BlackLink>{' '}
           - the js way translated into bahasa indonesia
         </li>
         <li>
-          <a href="https://github.com/wayanjimmy/wifian-dibali" target="_blank">
+          <BlackLink href="https://github.com/wayanjimmy/wifian-dibali" target="_blank">
             wifian-dibali
-          </a>{' '}
+          </BlackLink>{' '}
           - listing of public place to work accross bali
         </li>
         <li>
-          <a href="https://github.com/wayanjimmy/grosirobatjs" target="_blank">
+          <BlackLink href="https://github.com/wayanjimmy/grosirobatjs" target="_blank">
             grosirobatjs
-          </a>{' '}
+          </BlackLink>{' '}
           - fullstack javascript application built with express & react
         </li>
       </ul>
@@ -63,14 +67,14 @@ const IndexPage = () => (
       <h2>donate</h2>
       <ul>
         <li>
-          <a href="https://www.paypal.me/wayanjimmy" target="_blank">
+          <BlackLink href="https://www.paypal.me/wayanjimmy" target="_blank">
             paypal
-          </a>
+          </BlackLink>
         </li>
         <li>
-          <a href={gopay} target="_blank">
+          <BlackLink href={gopay} target="_blank">
             gopay
-          </a>
+          </BlackLink>
         </li>
       </ul>
     </Section>
@@ -81,17 +85,37 @@ const IndexPage = () => (
           <ContactIcon>
             <Mail size={16} />
           </ContactIcon>
-          <a href="mailto:jimmyeatcrab@gmail.com" target="_blank">
+          <BlackLink
+            href="mailto:jimmyeatcrab@gmail.com"
+            target="_blank"
+            className="no-underline"
+          >
             email
-          </a>
+          </BlackLink>
         </ContactItem>
         <ContactItem>
           <ContactIcon>
             <Send size={16} />
           </ContactIcon>
-          <a href="https://t.me/wayanjimmy" target="_blank">
+          <BlackLink
+            href="https://t.me/wayanjimmy"
+            target="_blank"
+            className="no-underline"
+          >
             telegram
-          </a>
+          </BlackLink>
+        </ContactItem>
+        <ContactItem>
+          <ContactIcon>
+            <Twitter size={16} />
+          </ContactIcon>
+          <BlackLink
+            href="https://twitter.com/wayanjimmy"
+            target="_blank"
+            className="no-underline"
+          >
+            twitter
+          </BlackLink>
         </ContactItem>
       </ContactList>
     </Section>
