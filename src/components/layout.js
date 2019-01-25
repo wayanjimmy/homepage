@@ -5,7 +5,7 @@ import styled from 'react-emotion'
 import { StaticQuery, graphql } from 'gatsby'
 
 const Content = styled.div`
-  ${tw`px-32 py-8 font-mono`};
+  ${tw`px-8 py-8 lg:px-32 font-mono`};
 `
 
 const Layout = ({ children }) => (
@@ -29,7 +29,10 @@ const Layout = ({ children }) => (
               content:
                 'Wayan Jimmy - Web developer currently focusing on PHP & Javascript',
             },
-            { name: 'keywords', content: 'github, php, javascript, bali' },
+            {
+              name: 'keywords',
+              content: 'github, php, javascript, bali',
+            },
           ]}
         >
           <html lang="en" />
