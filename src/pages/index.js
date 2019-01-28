@@ -44,6 +44,12 @@ const IndexPage = () => (
       <h2>projects</h2>
       <ul>
         <li>
+          <BlackLink href="https://wayanjimmy.netlify.com" target="_blank">
+            blog
+          </BlackLink>
+          - personal blog in bahasa indonesia
+        </li>
+        <li>
           <BlackLink href="https://github.com/wayanjimmy/thejsway_id" target="_blank">
             thejsway_id
           </BlackLink>{' '}
