@@ -67,6 +67,12 @@ const IndexPage = () => (
           </BlackLink>{' '}
           - fullstack javascript application built with express & react
         </li>
+        <li>
+          <BlackLink href="http://github.com/wayanjimmy/ts-algorithms" target="_blank">
+            ts-algorithms
+          </BlackLink>{' '}
+          - learn computer science and algorithms with typescript
+        </li>
       </ul>
     </Section>
     <Section>
