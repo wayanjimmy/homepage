@@ -56,13 +56,13 @@ const IndexPage = () => (
           - the js way translated into bahasa indonesia
         </li>
         <li>
-          <BlackLink href="https://github.com/wayanjimmy/wifian-dibali" target="_blank">
+          <BlackLink href="https://wifian-dibali.netlify.com" target="_blank">
             wifian-dibali
           </BlackLink>{' '}
           - listing of public place to work accross bali
         </li>
         <li>
-          <BlackLink href="https://github.com/wayanjimmy/grosirobatjs" target="_blank">
+          <BlackLink href="https://grosirobatjs.herokuapp.com" target="_blank">
             grosirobatjs
           </BlackLink>{' '}
           - fullstack javascript application built with express & react
@@ -72,6 +72,12 @@ const IndexPage = () => (
             ts-algorithms
           </BlackLink>{' '}
           - learn computer science and algorithms with typescript
+        </li>
+          <li>
+          <BlackLink href="http://jadwalnonton.herokuapp.com" target="_blank">
+            jadwalnonton
+          </BlackLink>{' '}
+          - unofficial graphql api for checking local movie & schedule
         </li>
       </ul>
     </Section>
