@@ -123,18 +123,6 @@ const IndexPage = () => (
             telegram
           </BlackLink>
         </ContactItem>
-        <ContactItem>
-          <ContactIcon>
-            <Twitter size={16} />
-          </ContactIcon>
-          <BlackLink
-            href="https://twitter.com/wayanjimmy"
-            target="_blank"
-            className="no-underline"
-          >
-            twitter
-          </BlackLink>
-        </ContactItem>
       </ContactList>
     </Section>
   </Layout>
