@@ -84,7 +84,7 @@ const IndexPage = () => (
             notebook
           </BlackLink>{' '}
           - Personal notes as a knowledge base / knowledge management
-        </li
+        </li>
       </ul>
     </Section>
     <Section>
