@@ -68,17 +68,23 @@ const IndexPage = () => (
           - fullstack javascript application built with express & react
         </li>
         <li>
-          <BlackLink href="http://github.com/wayanjimmy/ts-algorithms" target="_blank">
-            ts-algorithms
+          <BlackLink href="http://github.com/wayanjimmy/ts_algorithms" target="_blank">
+            ts_algorithms
           </BlackLink>{' '}
           - learn computer science and algorithms with typescript
         </li>
-          <li>
+        <li>
           <BlackLink href="http://jadwalnonton.herokuapp.com" target="_blank">
             jadwalnonton
           </BlackLink>{' '}
           - unofficial graphql api for checking local movie & schedule
         </li>
+        <li>
+          <BlackLink href="https://github.com/wayanjimmy/notebook" target="_blank">
+            notebook
+          </BlackLink>{' '}
+          - Personal notes as a knowledge base / knowledge management
+        </li
       </ul>
     </Section>
     <Section>
