@@ -8,6 +8,7 @@ pages:
   script:
     - npm install
     - ./node_modules/.bin/gatsby build
+    - cp ./keybase.txt public/keybase.txt
   artifacts:
     paths:
       - public
