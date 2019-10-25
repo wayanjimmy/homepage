@@ -1,16 +1,16 @@
-image: node:11.7.0
-
-cache:
-  paths:
-    - node_modules/
+image: node:6.10.0
 
 pages:
   script:
     - npm install
-    - ./node_modules/.bin/gatsby build
+    - npm install gatsby-cli
+    - ./node_modules/.bin/gatsby build --prefix-paths
     - cp ./keybase.txt public/keybase.txt
   artifacts:
     paths:
       - public
+  cache:
+    paths:
+      - node_modules
   only:
     - master
