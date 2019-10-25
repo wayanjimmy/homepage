@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'react-emotion'
 import { Link } from 'gatsby'
-import { Mail, Send, Twitter } from 'react-feather'
+import { Mail, Send, Twitter, Instagram } from 'react-feather'
 
 import Layout from '../components/layout'
 import gopay from '../images/gopay.jpg'
@@ -31,13 +31,16 @@ const IndexPage = () => (
     <Section>
       <h2>@wayanjimmy</h2>
       <p>
-        Web developer from <i>Bali</i>, currently focusing into PHP & Javascript
+        I'm Software Engineer from <i>Bali</i> who is interested in full-stack development and web technologies.
       </p>
       <p>
-        Currently working as a <i>fulltime</i> Web Developer for{' '}
+        Currently working as a <i>fulltime</i> Software Engineer for{' '}
         <a href="https://www.gogoprint.co.id/" target="_blank">
           Gogoprint Indonesia
-        </a>
+        </a>.
+      </p>
+      <p>
+        I'm a Japanese culture enthusiast, love take videos and cruise around the city.
       </p>
     </Section>
     <Section>
@@ -128,6 +131,18 @@ const IndexPage = () => (
           >
             telegram
           </BlackLink>
+        </ContactItem>
+        <ContactItem>
+          <ContactIcon>
+            <Instagram size={16} />
+            <BlackLink
+            href="https://instagram.com/wayanjimmy"
+            target="_blank"
+            className="no-underline"
+          >
+            ig
+          </BlackLink>
+          </ContactIcon>
         </ContactItem>
       </ContactList>
     </Section>
