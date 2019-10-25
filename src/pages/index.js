@@ -1,7 +1,7 @@
 import React from 'react'
-import styled from 'react-emotion'
 import { Link } from 'gatsby'
-import { Mail, Send, Twitter, Instagram } from 'react-feather'
+import styled from 'react-emotion'
+import { Mail, Send, Twitter, Instagram, Paperclip } from 'react-feather'
 
 import Layout from '../components/layout'
 import gopay from '../images/gopay.jpg'
@@ -26,21 +26,33 @@ const BlackLink = styled.a`
   ${tw`text-black no-underline hover:underline`}
 `
 
+const HighlightSpan = styled.span`
+  ${tw`text-blue-dark font-semibold`}
+`
+
+const HighlightLink = styled.a`
+  ${tw`text-blue-dark font-semibold no-underline hover:underline`}
+`
+
 const IndexPage = () => (
   <Layout>
     <Section>
       <h2>@wayanjimmy</h2>
       <p>
-        I'm Software Engineer from <i>Bali</i> who is interested in full-stack development and web technologies.
+        I'm Software Engineer from <HighlightSpan>Bali</HighlightSpan> who is
+        interested in <HighlightSpan>full-stack development</HighlightSpan> and
+        web technologies.
       </p>
       <p>
-        Currently working as a <i>fulltime</i> Software Engineer for{' '}
-        <a href="https://www.gogoprint.co.id/" target="_blank">
-          Gogoprint Indonesia
-        </a>.
+        Currently working as a fulltime Software Engineer for{' '}
+        <HighlightLink href="https://www.gogoprint.co.id/" target="_blank">
+          Gogoprint
+        </HighlightLink>
+        .
       </p>
       <p>
-        I'm a Japanese culture enthusiast, love take videos and cruise around the city.
+        I'm a Japanese culture enthusiast, love take videos and cruise around
+        the city.
       </p>
     </Section>
     <Section>
@@ -53,7 +65,10 @@ const IndexPage = () => (
           - personal blog in bahasa indonesia
         </li>
         <li>
-          <BlackLink href="https://github.com/wayanjimmy/thejsway_id" target="_blank">
+          <BlackLink
+            href="https://github.com/wayanjimmy/thejsway_id"
+            target="_blank"
+          >
             thejsway_id
           </BlackLink>{' '}
           - the js way translated into bahasa indonesia
@@ -71,7 +86,10 @@ const IndexPage = () => (
           - fullstack javascript application built with express & react
         </li>
         <li>
-          <BlackLink href="http://github.com/wayanjimmy/ts_algorithms" target="_blank">
+          <BlackLink
+            href="http://github.com/wayanjimmy/ts_algorithms"
+            target="_blank"
+          >
             ts_algorithms
           </BlackLink>{' '}
           - learn computer science and algorithms with typescript
@@ -83,25 +101,13 @@ const IndexPage = () => (
           - unofficial graphql api for checking local movie & schedule
         </li>
         <li>
-          <BlackLink href="https://github.com/wayanjimmy/notebook" target="_blank">
+          <BlackLink
+            href="https://github.com/wayanjimmy/notebook"
+            target="_blank"
+          >
             notebook
           </BlackLink>{' '}
           - Personal notes as a knowledge base / knowledge management
-        </li>
-      </ul>
-    </Section>
-    <Section>
-      <h2>donate</h2>
-      <ul>
-        <li>
-          <BlackLink href="https://www.paypal.me/wayanjimmy" target="_blank">
-            paypal
-          </BlackLink>
-        </li>
-        <li>
-          <BlackLink href={gopay} target="_blank">
-            gopay
-          </BlackLink>
         </li>
       </ul>
     </Section>
@@ -135,14 +141,31 @@ const IndexPage = () => (
         <ContactItem>
           <ContactIcon>
             <Instagram size={16} />
-            <BlackLink
+          </ContactIcon>
+          <BlackLink
             href="https://instagram.com/wayanjimmy"
             target="_blank"
             className="no-underline"
           >
             ig
           </BlackLink>
+        </ContactItem>
+      </ContactList>
+    </Section>
+    <Section>
+      <h2>links</h2>
+      <ContactList>
+        <ContactItem>
+          <ContactIcon>
+            <Paperclip size={16} />
           </ContactIcon>
+          <BlackLink
+            href="https://wayanjimmy-resume.netlify.com"
+            target="_blank"
+            className="no-underline"
+          >
+            resume
+          </BlackLink>
         </ContactItem>
       </ContactList>
     </Section>
