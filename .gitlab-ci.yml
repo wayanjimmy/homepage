@@ -6,7 +6,7 @@ cache:
 
 pages:
   script:
-    - npm install
+    - yarn
     - ./node_modules/.bin/gatsby build
     - cp ./keybase.txt public/keybase.txt
   artifacts:
