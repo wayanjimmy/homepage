@@ -1,4 +1,4 @@
-image: node:latest
+image: node:11.7.0
 
 cache:
   paths:
@@ -6,7 +6,7 @@ cache:
 
 pages:
   script:
-    - yarn
+    - npm install
     - ./node_modules/.bin/gatsby build
     - cp ./keybase.txt public/keybase.txt
   artifacts:
