@@ -39,7 +39,7 @@ const IndexPage = () => (
     <Section>
       <h2>@wayanjimmy</h2>
       <p>
-        I'm Software Engineer from <HighlightSpan>Bali</HighlightSpan> who is
+        I'm Software Engineer from <HighlightSpan>Bali, Indonesia</HighlightSpan> who is
         interested in <HighlightSpan>full-stack development</HighlightSpan> and
         web technologies.
       </p>
