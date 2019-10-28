@@ -61,7 +61,7 @@ typings/
 .next
 
 # eleventy.js build output
-dist
+public
 
 #OSX
 .DS_Store
