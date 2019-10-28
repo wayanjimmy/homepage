@@ -1,90 +1,60 @@
-# Gatsby Tailwind Emotion Starter
+# Tai11s - the Eleventy + Tailwind CSS starter
+
+Tai11s is a minimal starting point for Eleventy projects using
+
+Features:
+- [11ty](https://www.11ty.io/)
+- [Sass/SCSS](https://github.com/sass/node-sass)
+- [Webpack](https://webpack.js.org/)
+- [Babel](https://babeljs.io/)
+- [light-server](https://github.com/txchen/light-server)
+- [PostCSS](https://postcss.org/)
+- [CSSnano](https://cssnano.co/)
+- [Autoprefixer](https://github.com/postcss/autoprefixer)
+
+## Credit
+This is a fork of a starter repo originally created by [Ian Rose](https://github.com/ianrose/deventy/).
+
+I have added
+
+- Tailwind CSS config build chain (NB tailwind.config.js is only compiled at each hard run of the script so you will need to quit and re-run `npm run dev` if you make changes during local development)
+- Purge CSS conditionally run at build, but not during local development
 
 ## Getting Started
 
-Install Gatsby CLI:
-```sh
-npm install --global gatsby-cli
-```
+Clone this repo and install all dependencies using npm:
 
-Create new Gatsby project using this starter:
-```sh
-gatsby new my-new-website https://github.com/muhajirframe/gatsby-tailwind-emotion-starter
-```
-
-```sh
-cd my-new-website
-```
-
-## Usage
-
-### Develop
+### How to use in development
 
 ```
-npm run develop
+$ npm run dev
+```
+ And in debug mode:
+ 
+```
+$ npm run dev:debug
 ```
 
-### Build
+You can view the rendered site at the given access URL served up by light-server:
+```
+$ light-server is listening at http://localhost:4000
+```
+
+The local url is configured in `.lightserverrc`
+
+### To build ready for production
 
 ```
 npm run build
 ```
-Your built file will be in `/public`
 
-This project was based on [gatsby-plugin-tailwindcss](https://github.com/muhajirframe/gatsby-plugin-tailwindcss/)
+Tai11s will build and optimise your code ready for deployment
 
-### How the heck do I use it?
+- Pack and optimise javascript
+- Build tailwind CSS from config, compile your Sass and run PurgeCSS to remove unusued classes based on the output `dist` folder
 
-```javascript
-import React from 'react'
-import styled from 'react-emotion'
+## BONUS: Travis Github Pages deployment script
 
+`.travis.yml` can be modified to suit your own needs. This simple script will build from a named branch and deploy to Github Pages via your [Travis CI](https://travis-ci.org/) account. 
 
-const Container = styled.div`
-  ${tw`py-8`};
-`
-const Text = styled.p`
-  ${tw`bg-black text-white`};
-`
-
-const Home = () => (
-  <Container>
-    <Text>I am Text component made with Tailwind CSS + EmotionJS</Text>
-  </Container>
-)
-
-export default Home
-```
-
-### Why would I use it?
-
-Because Tailwind CSS is awesome. If you used [Tachyons](https://tachyons.io/) before. You know how awesome it utility first CSS. Compared to CSS framework like [Bootstrap](http://getbootstrap.com/). -- If you haven't try utility first CSS, give it a try. It's one of the best things in my life --. Tailwind is a more customizable version of Tachyons.
-
-But, because [Tailwind CSS](https://tailwindcss.com) gives you alot of class as utilities. The file size gets bloated. In fact it's 1.5 times bigger than Bootstrap. (https://tailwindcss.com/docs/controlling-file-size )
-
-CSS-in-JS to save.
-
-Fortunately, you can use CSS-in-JS like [Emotion](https://github.com/emotion-js/emotion), to only load needed styles. So you can keep you css size small.
-
-Furthremore, CSS-in-JS is just awesome. [CSS in JS: Benefits, Drawbacks, and Tooling](https://objectpartners.com/2017/11/03/css-in-js-benefits-drawbacks-and-tooling/)
-
-Why Gatsby?
-Because Gatsby is blazing fast, and comes with alot of plugins
-
-## For more information
-
-- [Github](https://github.com/muhajirframe/gatsby-tailwind-emotion-starter)
-- [gatsby-tailwind-emotion-starter](https://github.com/muhajirframe/gatsby-tailwind-emotion-starter)
-- Got a question? [Submit an issue](https://github.com/muhajirframe/gatsby-tailwind-emotion-starter/issues/new)
-
-## Contributing
-
-- [Submit an idea](https://github.com/muhajirframe/gatsby-tailwind-emotion-starter/issues/new)
-- Make a pull request
-
-## Related
-- [react-tailwind-emotion-starter](https://github.com/muhajirframe/react-tailwind-emotion-starter) A React + Tailwind + EmotionJs starter based on [create-react-app](https://github.com/facebook/create-react-app)
-- [vscode-tailwind-styled-snippets](https://github.com/muhajirframe/vscode-tailwind-styled-snippets)
-- [gatsby-plugin-tailwindcss](https://github.com/muhajirframe/gatsby-plugin-tailwincss)
-
-**Enjoy!**
+Store your Github Token securely in the Travis control panel
