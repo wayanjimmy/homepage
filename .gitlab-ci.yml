@@ -2,13 +2,11 @@ image: node:10.16.0
 
 pages:
   script:
-    - npm install
-    - npm install gatsby-cli
-    - ./node_modules/.bin/gatsby build --prefix-paths
-    - cp ./keybase.txt public/keybase.txt
+    - yarn
+    - yarn build
   artifacts:
     paths:
-      - public
+      - dist
   cache:
     paths:
       - node_modules
